@@ -1,5 +1,6 @@
 import { FetchDataService } from "./fetchDataService";
 import { GetImagesService } from "./getImagesService";
+import { GetImageService } from "./getImageService";
 
 export class ServiceContainer {
 
@@ -9,5 +10,9 @@ export class ServiceContainer {
 
     public static getGetImagesService() : GetImagesService {
         return new GetImagesService();
+    }
+
+    public static getGetImageService() : GetImageService {
+        return new GetImageService();
     }
 }
